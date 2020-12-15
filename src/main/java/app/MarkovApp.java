@@ -7,8 +7,11 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * Class MarkovApp
+ */
 public class MarkovApp {
-	
+
 	public static void main(String[] args) throws Exception {
         String sentences = readFileAsString("./target/classes/VictorHugo_LesMiserables-II-Cosette.txt");
         System.out.println(sentences);
@@ -25,7 +28,7 @@ public class MarkovApp {
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 
-        data = Files.readString(path, StandardCharsets.UTF_8); 
+        data = Files.readString(path, StandardCharsets.UTF_8);
         return data; 
     } 
     
