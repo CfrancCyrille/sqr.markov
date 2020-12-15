@@ -1,4 +1,7 @@
 package app;
+/*
+ * ma classe App
+ */
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
