@@ -7,6 +7,11 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * Classe app de Markov
+ * @author Alexandre Bézé
+ */
+
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
