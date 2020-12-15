@@ -7,6 +7,11 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * Main class of this project
+ * Details : Read a file and train Markov model
+ * Generation of sentences based on a specific target
+ */
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {

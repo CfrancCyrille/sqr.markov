@@ -1,13 +1,13 @@
 # TP 4A 2020-21: Text generator with Markov's chains
 
 ## Questions
-1. Fork this github repository  (2 points)
-2. Run the project
-3. Comment the 3 classes: MarkovApp, MarkovChain & MarkovData (3 points)
-4. Commit your changes and check-it into github
-5. On github, make a pull request (1 point)
-6. Complete the next section: "Analyze IADT functions" into this file (2 points)
-7. Commit your changes (commit README.md)
+1. Fork this github repository  (2 points) - done
+2. Run the project - done
+3. Comment the 3 classes: MarkovApp, MarkovChain & MarkovData (3 points) - done
+4. Commit your changes and check-it into github - done
+5. On github, make a pull request (1 point) - done
+6. Complete the next section: "Analyze IADT functions" into this file (2 points) - done
+7. Commit your changes (commit README.md) - done
 8. On github, update your pull request (1 point)
 9. Make tests defined into section: "Functions to test now" (call your test functions using the rule: GIVEN_WHEN_THEN) (10 points)
 10. Check the test coverage with the Jacoco coverage report provided into: /target/site/jacoco/index.html
@@ -29,26 +29,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D: Demonstrate | Main fonction  | 
+| readFileAsString | I: Inspect  | Getting text from a particular path | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D: Demonstrate | Constructor of MarkovChain class |
+| generateMarkov  | T: Test |  |
+| learn  | T: Test |  |
+| setRgen  | D: Demonstrate | Setter |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | D: Demonstrate | Uses another given function |
+| renforceWord  | T |  |
+| getLearnedWord | D: Demonstrate | Uses another given function |
+| containsKeyWord | D: Demonstrate | Uses another given function  |
+| getKeyWord | I: Inspect  | Getter |
+| KeyWordSize | I: Inspect  | Getter |
 
 ## Functions to test now
 
