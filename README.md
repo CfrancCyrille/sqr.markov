@@ -27,29 +27,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main | I:  | Fonction main n'a pas besoin d'etre test | 
-| readFileAsString | D: | Fonction simple démontrer | 
+| main | D  | Fonction main n'a pas besoin d'etre test | 
+| readFileAsString | I | Fonction simple démontrer | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  | A: | Le constructeur de la chaine appelle le contructeur de données |
-| generateMarkov  | T: | Generer puis Tester une phrase pour s'assurer de l'aléa |
+| MarkovChain  | D | Le constructeur de la chaine appelle le contructeur de données |
+| generateMarkov  | T | Generer puis Tester une phrase pour s'assurer de l'aléa |
 | learn  | T: | Test nécessaire mais compliqué |
-| setRgen  | A: | Fonction compliqué mais test également obligatoire |
-|
+| setRgen  | D | Fonction compliqué mais test également obligatoire |
+
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  | T: | Créer une liste string pour y mettre les mots |
-| getLearnedWord  | A: | Recupere les nouveaux mots |
-| renforceWord  | T: | ajoute un mot de plus dans la liste des mot appris |
-| containsKeyWord.  | D: | Créer une liste avec les phrases contenant les mots-clés |
-| learnWord.  | A: | ???? |
-| getKeyWord.  | D: | Permet d'entrer un mot-clé |
-| keyWordSize.  | I: | Prend la taille du mot-clé |
+| read  | T |  |
+| learnWord  | D | uses map inner function |
+| renforceWord  | T |  |
+| getLearnedWord  | D | uses map inner function |
+| containsKeyWord  | D | uses map inner function |
+| getKeyWord  | I | getter |
+| KeyWordSize  | I | getter |
 
 ## Functions to test now
 
