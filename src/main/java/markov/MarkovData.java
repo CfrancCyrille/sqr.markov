@@ -1,5 +1,9 @@
 package markov;
 
+/** Class that extracts the data from the input text
+ *  @author Vincent Pezet
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
