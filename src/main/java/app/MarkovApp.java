@@ -8,7 +8,11 @@ import java.nio.file.Paths;
 import markov.MarkovChain;
 
 public class MarkovApp {
-	
+	/**
+     * 
+     * Application de l'algo de markov
+     * 
+     */
 	public static void main(String[] args) throws Exception {
         String sentences = readFileAsString("./target/classes/VictorHugo_LesMiserables-II-Cosette.txt");
         System.out.println(sentences);

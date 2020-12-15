@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.Random;
 
 public class MarkovChain {
+    /**
+     *  chaine de markov
+     *  @Lucas MASSOT
+     */
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
 	private int ngram;

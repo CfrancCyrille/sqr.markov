@@ -7,6 +7,12 @@ import java.util.List;
 import java.util.Map;
 
 public class MarkovData {
+	/**
+	 * 
+	 * données de l'algo de markov
+	 * @Lucas MASSOT
+	 * 
+	 */
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
 
