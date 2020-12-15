@@ -29,26 +29,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | I | fonction générique, pas besoin de tester | 
+| readFileAsString | T | On teste que le string retourné est bien celui qu'on attend | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | I | Constructeur de la classe un coup d'oeil suffit pour le tester |
+| generateMarkov  | T | On peut tester cette fonction |
+| learn  | T | A priori peut etre tester mais pas sur |
+| setRgen  | I | Setter, pas besoin d'être tester |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T | On peut tester cette methode |
+| renforceWord  | T | O peut tester cette méthode |
+| getLearnedWord | I | Getter, pas besoin d'être tester |
+| containsKeyWord | I | Getter sur booléen, pas besoin d'être tester |
+| learnWord | T | On peut teste cette méthode |
+| getKeyWord | I | Getter, pas besoin de tester cette méthode |
+| keyWordSize | I | Getter sur un size, pas besoin de tester cette méthode|
 
 ## Functions to test now
 

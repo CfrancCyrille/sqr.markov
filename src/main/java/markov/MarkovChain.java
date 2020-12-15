@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Classe représentant une chaine de markov
+ * @author Alexandre Bézé
+ */
+
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
