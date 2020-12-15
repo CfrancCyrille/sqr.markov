@@ -1,4 +1,7 @@
 package markov;
+/*
+ * la classe Markov date
+ */
 
 import java.util.ArrayList;
 import java.util.Arrays;
