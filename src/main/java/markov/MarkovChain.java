@@ -5,6 +5,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * recupere et apprend des mots pour ensuite les renvoyer en chaines de mots comprehensible
+ * @author Oriane
+ *
+ */
+
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
