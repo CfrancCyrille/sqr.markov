@@ -10,6 +10,7 @@ public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
 
+	/** Fonction permettant la lecture de la chaine */
 	public void read(String text) {
 		List<String> newWords = Arrays.asList(text.split(" "));
 		this.textwords.addAll(newWords);
@@ -19,7 +20,7 @@ public class MarkovData {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
 		
-		// if chain in list then add extra word
+		// Si la chaine est detecté, ajouter un mot supplémentaire
 		if(isNewKey){
 			value = getLearnedWord(keyString);
 			value += " " + wordToLearn;

@@ -7,34 +7,36 @@ import java.util.Random;
 
 public class MarkovChain {
 	
-	/** Markov chain ngram parameter (contiguous sequence of words) */
+	/** Paramètre NGRAM de la chaine de Markov (Séquence de mot proche) */
 	private int ngram;
-	/** Seed generator for randow  */
+	/** Générateur de nombre random rgen  */
 	private Random rgen = new Random();
-	/** Seed generator for randow  */
+	/** Déclaration de la valeur de stockage MarkovData  */
     private MarkovData data = null;
 
+    /** Créateur de la classe MarkovChain */
 	public MarkovChain (int ngram){
 		this.ngram = ngram;
 		this.data = new MarkovData();
 	}
 
+    /** Fonction learn */
 	public void learn(String text) {
 		data.read(text);
 		
-		// Learn until last ngram words
+		// Apprendre jusqu'au dernier mot NGRAM
         int maxwords = data.keyWordSize() - ngram - 1;
         String keyString = null;
         int end;
         
-        // Search next tuple of ngram words
+        // Recherche du prochain empaquetage du mot NGRAM
         for (int j = 0; j < maxwords; j++) {
             keyString = "";
             end = j + ngram;
             for(int k = j; k < end; k++) {
                 keyString = keyString + data.getKeyWord(k) + " ";
             }
-			keyString = keyString.trim(); // get rid of trailing spaces
+			keyString = keyString.trim(); // Retirer les espaces finaux
 			
 			String wordToLearn = data.getKeyWord(end);
 			
@@ -47,49 +49,50 @@ public class MarkovChain {
         }
 	}
 
+    /**Fonction de génération de Markov */
     public String generateMarkov(int numWords) {
-        // Build a random string using the above Markov chain table
+        // Consrtuit une chaîne aléatoire en utilisant la table de chaînes de Markov ci-dessus
         String buffer = "";
         String newword = "";
         String keyString = "";
         
-        // Initialize random number generator
+        // Initialisation du générateur de nombres aléatoires
         List<String> lastwords = new ArrayList<String>();
         int possible = data.keyWordSize() - ngram;
 		int startnum = rgen.nextInt(possible);
 		
-		// Get the random start word chain of ngram words
+		// Obtenir la chaîne de mots de début aléatoire des mots NGRAM
         for (int i = startnum, j = 0; i < startnum+ngram; i++,j++){ 	
         	newword = data.getKeyWord(i);
 			lastwords.add(j, newword);
             buffer += newword + " ";
         }
 
-        // Loop until numWords was generated
+        // Boucle jusqu'à ce que numWords soit généré
         for(int i = ngram; i < numWords; i++){
             keyString = "";
             
-            // Generate the 'key string' 
+            // Générer la KeyChain
             for (int j = 0; j < ngram; j++) {
                 keyString = keyString + lastwords.get(j) + " ";
             }
-            // Get rid of trailing spaces
+            // Retirer les espaces en fin
 			keyString = keyString.trim();		
 			
-			// If ngram in list then add next word
+			// Si NGRAM présent dans la liste, ajoutez le mot suivant
 			if(data.containsKeyWord(keyString))	{
 		        List<String> possiblenext = new ArrayList<String>();
                 possiblenext = Arrays.asList(data.getLearnedWord(keyString).split(" "));
-                int c = possiblenext.size();	// Must be at least 1
+                int c = possiblenext.size();	// Au moins de 1
                	int r = rgen.nextInt(c);
                 
                 String nextword = possiblenext.get(r);
                 buffer += nextword +" ";
                 for (int j = 0; j < ngram-1; j++) {
-                	// shift words to the left
+                	// Décalage des mots vers la gauche
                     lastwords.set(j, lastwords.get(j+1));	
                 }
-                // Add the next word to end
+                // Ajoute le dernier mot à la fin
                 lastwords.set(ngram-1, nextword);			
             }
         }
