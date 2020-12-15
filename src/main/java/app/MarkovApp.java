@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import markov.MarkovChain;
 
 /**
- * Commentaire 1
+ * Commentaire 1 
  */
 public class MarkovApp {
 	public static void main(String[] args) throws Exception {
