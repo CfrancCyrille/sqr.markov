@@ -5,9 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-/*
- *  Cette classe applique l'algorithme Markov
- */
+/**  Cette classe applique l'algorithme Markov */
 
 
 
