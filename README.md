@@ -29,26 +29,28 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D:  | Fonction main n'a pas réellement besoin de test | 
+| readFileAsString | D: | Fonction simple facile à démontrer | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
-
+| MarkovChain  | D: | Constructeur de la chaine que appelle le contructeur de données |
+| generateMarkov  | T: | genere une phrase aléatoire tester si vraiment aléatoire |
+| learn  | T: | À tester mais ná pas l'air simple |
+| setRgen  | D: | Pas necessairre de tester |
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T: |   |
+| getLearnedWord  | D: | recupere les mots appris |
+| renforceWord  | T: |  |
+| containsKeyWord.  | D: | ... |
+| learnWord.  | A: | ... |
+| getKeyWord.  | I: | ... |
+| keyWordSize.  | A: | ... |
 
 ## Functions to test now
 
@@ -78,4 +80,3 @@ public boolean renforceWord(String keyString, String wordToLearn)
 ```
 
 ## Documentation and validation set
-https://www.dcode.fr/chaine-markov-texte

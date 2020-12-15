@@ -5,8 +5,15 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+	 * 
+	 * données de l'algo de markov
+	 * !!!! mettre au dessus de le class
+	 * @Lucas MASSOT
+	 * 
+	 */
 public class MarkovData {
+	
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
 

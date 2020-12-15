@@ -4,13 +4,26 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import markov.MarkovChain;
+import app.MarkovApp;
 
 public class MarkovChainTest {
 
-	//@Test
-	public void test() {
-		fail("Not yet implemented");
+
+	// public void learn(String text)
+	// public String generateMarkov(int numWords)
+
+	@Test
+	/**
+	 * GIVEN learn
+	 * WHEN Simple Sentences
+	 * THEN 5Words
+	 */
+	public void testlearnSimpleSentences5Words() throws Exception {
+		MarkovChain test = new MarkovChain(5);
+		String data = MarkovApp.readFileAsString("pe ja jalieke dhhs jejskalak jac");
+		test.learn(data);
+		assertEquals(5, test.getSize());
 	}
 
+	
 }

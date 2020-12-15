@@ -6,7 +6,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import markov.MarkovChain;
-
+/**
+     * 
+     * Application de l'algo de markov
+     * !!!! mettre au dessus de le classe
+     */
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {

@@ -4,8 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
+/**
+     *  chaine de markov
+     * !!!! mettre au dessus de le class
+     *  @Lucas MASSOT
+     */
 public class MarkovChain {
+    
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
 	private int ngram;
@@ -17,7 +22,11 @@ public class MarkovChain {
 	public MarkovChain (int ngram){
 		this.ngram = ngram;
 		this.data = new MarkovData();
-	}
+    }
+    
+    public int getSize(){
+        return this.data.keyWordSize();
+    }
 
 	public void learn(String text) {
 		data.read(text);
