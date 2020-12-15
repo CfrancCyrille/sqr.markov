@@ -29,26 +29,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | T |  | 
+| readFileAsString | I | Juste un retour de données, pas à tester | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | A | Constructeur, pas à tester |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | I | Un setter, pas à tester, vérification visuelle suffisante |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | I | Simple séparation d'un tableau, pas à tester |
+| learnWord  | D | Appel de la fonction put |
+| renforceWord  | T |  |
+| Etc.  | I | Fonctions basiques, vérifiables visuellement |
 
 ## Functions to test now
 
