@@ -25,30 +25,31 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 | D: Def/Dem | You can Demonstrate the function or by Definition the function needs not test (generate code, call functions, etc.)|
 | T: Test | the function can be easly test |
 
-### Class app.MarkovApp
-
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | I:  | Fonction main n'a pas besoin d'etre test | 
+| readFileAsString | D: | Fonction simple démontrer | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
-
+| MarkovChain  | A: | Le constructeur de la chaine appelle le contructeur de données |
+| generateMarkov  | T: | Generer puis Tester une phrase pour s'assurer de l'aléa |
+| learn  | T: | Test nécessaire mais compliqué |
+| setRgen  | A: | Fonction compliqué mais test également obligatoire |
+|
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T: | Créer une liste string pour y mettre les mots |
+| getLearnedWord  | A: | Recupere les nouveaux mots |
+| renforceWord  | T: | ajoute un mot de plus dans la liste des mot appris |
+| containsKeyWord.  | D: | Créer une liste avec les phrases contenant les mots-clés |
+| learnWord.  | A: | ???? |
+| getKeyWord.  | D: | Permet d'entrer un mot-clé |
+| keyWordSize.  | I: | Prend la taille du mot-clé |
 
 ## Functions to test now
 
