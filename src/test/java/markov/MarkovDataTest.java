@@ -15,9 +15,9 @@ public class MarkovDataTest {
 	/**
 	 * GIVEN read
 	 * WHEN Simple sentence
-	 * THEN true
+	 * THEN 2Words
 	 */
-	public void testReadSimpleSentenceTrue(){
+	public void read_SimpleSentence_2Words(){
 		MarkovData data = new MarkovData();
 		String sentence = "Simple Sentence";
 		data.read(sentence);
