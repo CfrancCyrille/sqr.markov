@@ -10,7 +10,12 @@ public class MarkovDataTest {
 	// public boolean renforceWord(String keyString, String wordToLearn)
 
 	@Test
-	public void testread() {
+	/**
+	 * GIVEN read
+	 * WHEN Simple sentence
+	 * THEN 3Words
+	 */
+	public void testReadSimpleSentences3Words() {
 		MarkovData test = new MarkovData();
 		test.read("Cesont 3 mots");
 		int actual = test.keyWordSize();
@@ -19,7 +24,12 @@ public class MarkovDataTest {
 	}
 
 	@Test
-	public void testrenforceWord(){
+	/**
+	 * GIVEN renforceWord
+	 * WHEN Simple sentence
+	 * THEN true
+	 */
+	public void testrenforceWordSimpleSentencesTrue(){
 		MarkovData test = new MarkovData();
 		String laphrase = "ajout de un mots en plus";
 		test.learnWord(laphrase, "plus");

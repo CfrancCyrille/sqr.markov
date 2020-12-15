@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 /**
      *  chaine de markov
+     * !!!! mettre au dessus de le class
      *  @Lucas MASSOT
      */
 public class MarkovChain {

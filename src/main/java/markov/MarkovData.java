@@ -8,6 +8,7 @@ import java.util.Map;
 /**
 	 * 
 	 * données de l'algo de markov
+	 * !!!! mettre au dessus de le class
 	 * @Lucas MASSOT
 	 * 
 	 */

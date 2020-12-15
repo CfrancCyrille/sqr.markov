@@ -9,7 +9,7 @@ import markov.MarkovChain;
 /**
      * 
      * Application de l'algo de markov
-     * 
+     * !!!! mettre au dessus de le classe
      */
 public class MarkovApp {
 	

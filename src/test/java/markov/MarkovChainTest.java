@@ -13,7 +13,12 @@ public class MarkovChainTest {
 	// public String generateMarkov(int numWords)
 
 	@Test
-	public void testlearn() throws Exception {
+	/**
+	 * GIVEN learn
+	 * WHEN Simple Sentences
+	 * THEN 5Words
+	 */
+	public void testlearnSimpleSentences5Words() throws Exception {
 		MarkovChain test = new MarkovChain(5);
 		String data = MarkovApp.readFileAsString("pe ja jalieke dhhs jejskalak jac");
 		test.learn(data);
