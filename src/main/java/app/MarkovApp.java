@@ -7,6 +7,11 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * recupere le fichier et les donnees pour les stocker en tant que string dans data
+ * @author Oriane
+ */
+
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
