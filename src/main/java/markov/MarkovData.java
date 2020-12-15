@@ -6,9 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
+/**
  * Commentaire 3
- * 
  */
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();

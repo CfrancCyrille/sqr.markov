@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
-/*
+/**
  * Commentaire 1
  */
 public class MarkovApp {
