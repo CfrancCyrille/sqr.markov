@@ -14,7 +14,13 @@ public class MarkovData {
 		List<String> newWords = Arrays.asList(text.split(" "));
 		this.textwords.addAll(newWords);
 	}
-	
+
+	/** ajout de mot
+	 *
+	 * @param keyString
+	 * @param wordToLearn
+	 * @return
+	 */
 	public boolean renforceWord(String keyString, String wordToLearn) {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
@@ -28,6 +34,11 @@ public class MarkovData {
 		return isNewKey;
 	}
 
+	/**recupère le mot
+	 *
+	 * @param keyString
+	 * @return
+	 */
 	String getLearnedWord(String keyString) {
 		return this.markovTable.get(keyString);
 	}
