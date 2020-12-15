@@ -29,26 +29,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main 			| D | Test du main pas nécessaire | 
+| readFileAsString | A | Simple ouverture de fichier et récupération du texte | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D | Simple constructeur de la classe |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | D | Setter de rgen |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | T |  |
+| renforceWord  | T |  |
+| getLearnedWord  | A | Simple récupération d'une valeur d'un dictionnaire |
+| containsKeyWord  | A | Simple vérification de présence d'une valeur dans une liste |
+| getKeyWord  | A | Simple récupération d'une valeur d'une liste |
+| keyWordSize  | A | Simple récupération de taille de liste |
 
 ## Functions to test now
 

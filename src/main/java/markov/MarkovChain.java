@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/** Class that learns and generates strings
+ *  @author Vincent Pezet
+ */
+
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
