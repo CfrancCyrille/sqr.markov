@@ -23,32 +23,42 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 | I: Inspect | No test needed, just a simple static test (visual) on a subset of classes (commentaries, indentation, etc.) |
 | A: Analyze | Not easy to test but the algorithm is well know and can be check by a static analyze |
 | D: Def/Dem | You can Demonstrate the function or by Definition the function needs not test (generate code, call functions, etc.)|
-| T: Test | the function can be easly test |
+| T: Test | the function can be easily test |
 
 ### Class app.MarkovApp
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D |on n'a pas besoin de tester cette fonction | 
+| readFileAsString | T|   | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | T | |
+| generateMarkov  |A  |pas facile à tester  |
+| learn  |A  |pas facile à tester  |
+| setRgen  | D | pas besoin de tester puisque c'est un setter |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  |  T|  |
+| learnWord  | D |setter  |
+| renforceWord  | T |  |
+| getLearnedWord  |D  | getter  |
+| containsKeyWord  | D | getter |
+| learnWord  |  D|setter  |
+| getKeyWord  | D | getter |
+| keyWordSize  | D |getter  |
+
+
+
+
+
+
 
 ## Functions to test now
 
