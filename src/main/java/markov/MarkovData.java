@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**	
  * 
- *Kevin -> Commentaire classe MarkovData
+ *GUIFFO Kevin -> Commentaire classe MarkovData
  *
  */
 

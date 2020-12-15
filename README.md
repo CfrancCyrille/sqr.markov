@@ -29,26 +29,28 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D | Main contains only call functions | 
+| readFileAsString | T | Need to test the values returned by the function | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D | contains only a call to the MarkovData function that will be tested |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | D | autogenerate function |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | D | contains only a call function that will be tested |
+| renforceWord  | T |  |
+| keyWordSize | T |  |
+| getKeyWord | T |  |
+| containsKeyWord | T |  |
 
 ## Functions to test now
 

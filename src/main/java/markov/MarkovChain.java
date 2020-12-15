@@ -7,7 +7,7 @@ import java.util.Random;
 
 /**	
  * 
- *Kevin -> Commentaire classe MarkovChain
+ *GUIFFO Kevin -> Commentaire classe MarkovChain
  *
  */
 public class MarkovChain {

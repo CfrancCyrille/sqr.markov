@@ -9,7 +9,7 @@ import markov.MarkovChain;
 
 /**	
  * 
- *Kevin -> Commentaire classe MarkovApp
+ * GUIFFO Kevin -> Commentaire classe MarkovApp
  *
  */
 
