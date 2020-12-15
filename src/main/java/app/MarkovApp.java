@@ -1,15 +1,15 @@
 package app;
 
-/** Main Class
- *  @author Vincent Pezet
- */
-
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import markov.MarkovChain;
+
+/** Main Class
+ *  @author Vincent Pezet
+ */
 
 public class MarkovApp {
 	

@@ -1,13 +1,13 @@
 package markov;
 
-/** Class that learns and generates strings
- *  @author Vincent Pezet
- */
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+
+/** Class that learns and generates strings
+ *  @author Vincent Pezet
+ */
 
 public class MarkovChain {
 	
