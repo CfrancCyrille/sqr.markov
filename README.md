@@ -1,11 +1,11 @@
 # TP 4A 2020-21: Text generator with Markov's chains
 
 ## Questions
-1. Fork this github repository  (2 points)
-2. Run the project
-3. Comment the 3 classes: MarkovApp, MarkovChain & MarkovData (3 points)
-4. Commit your changes and check-it into github
-5. On github, make a pull request (1 point)
+1. Fork this github repository  (2 points) - done
+2. Run the project - done
+3. Comment the 3 classes: MarkovApp, MarkovChain & MarkovData (3 points) - done
+4. Commit your changes and check-it into github - done
+5. On github, make a pull request (1 point) - done
 6. Complete the next section: "Analyze IADT functions" into this file (2 points)
 7. Commit your changes (commit README.md)
 8. On github, update your pull request (1 point)
