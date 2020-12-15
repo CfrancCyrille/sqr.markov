@@ -25,30 +25,31 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 | D: Def/Dem | You can Demonstrate the function or by Definition the function needs not test (generate code, call functions, etc.)|
 | T: Test | the function can be easly test |
 
-### Class app.MarkovApp
-
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D  | Fonction main n'a pas besoin d'etre test | 
+| readFileAsString | I | Fonction simple démontrer | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D | Le constructeur de la chaine appelle le contructeur de données |
+| generateMarkov  | T | Generer puis Tester une phrase pour s'assurer de l'aléa |
+| learn  | T: | Test nécessaire mais compliqué |
+| setRgen  | D | Fonction compliqué mais test également obligatoire |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | D | uses map inner function |
+| renforceWord  | T |  |
+| getLearnedWord  | D | uses map inner function |
+| containsKeyWord  | D | uses map inner function |
+| getKeyWord  | I | getter |
+| KeyWordSize  | I | getter |
 
 ## Functions to test now
 

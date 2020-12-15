@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+    /** Fonction de création de chaine **/
+
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
