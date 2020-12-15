@@ -1,11 +1,18 @@
 package markov;
 
 import java.util.ArrayList;
+
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+
+/**
+ * Classe pour créer les données MArkov
+ */
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
