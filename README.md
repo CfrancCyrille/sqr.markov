@@ -29,8 +29,8 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | T |  | 
+| readFileAsString | I | Juste un retour de données, rien à tester | 
 
 ### Class markov.MarkovChain
 
