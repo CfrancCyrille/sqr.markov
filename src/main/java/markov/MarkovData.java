@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**  Dans cette classe, on réalise la repartition du text lue */
+
+
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
@@ -19,7 +22,7 @@ public class MarkovData {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
 		
-		// if chain in list then add extra word
+		// if chain in list then add extra wordD
 		if(isNewKey){
 			value = getLearnedWord(keyString);
 			value += " " + wordToLearn;

@@ -29,26 +29,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main | D | Pas nécessaire de tester main  | 
-| readFileAsString | I | Lire le texte en tant que String  | 
+| main |  |  | 
+| readFileAsString |  |  | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  | D | Constructeur, pas nécessaire d'appliquer un test |
-| generateMarkov  | T | Génération de l'algorithme Makrov |
-| learn  | T | Ajout des mots  |
-| setRgen  | D | Pas nécessaire de tester |
+| MarkovChain  |  |  |
+| generateMarkov  |  |  |
+| learn  |  |  |
+| setRgen  |  |  |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  | T | Ajouter chaque mot séparé d'espace dans un tableau |
-| learnWord  | I | Pas nécessaire de tester |
-| renforceWord  | T | Ajouter un mot si la chaine est dans la liste  |
-| Etc.  | I |  |
+| read  |  |  |
+| learnWord  |  |  |
+| renforceWord  |  |  |
+| Etc.  |  |  |
 
 ## Functions to test now
 

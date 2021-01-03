@@ -7,6 +7,8 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**  Cette classe permet de lire le fichier et générer l'algorithme Markov  */
+
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
