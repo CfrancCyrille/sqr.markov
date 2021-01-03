@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
@@ -14,8 +15,14 @@ public class MarkovData {
 		List<String> newWords = Arrays.asList(text.split(" "));
 		this.textwords.addAll(newWords);
 	}
-	
-	public boolean renforceWord(String keyString, String wordToLearn) {
+
+	/** ajout de mot
+	 *
+	 * @param keyString
+	 * @param wordToLearn
+	 * @return
+	 */
+	public boolean pprenforceWord(String keyString, String wordToLearn) {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
 		
@@ -28,6 +35,11 @@ public class MarkovData {
 		return isNewKey;
 	}
 
+	/**recupère les mots en grassss
+	 *
+	 * @param keyString
+	 * @return
+	 */
 	String getLearnedWord(String keyString) {
 		return this.markovTable.get(keyString);
 	}

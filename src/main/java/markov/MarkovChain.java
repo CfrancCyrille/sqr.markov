@@ -1,9 +1,10 @@
 package markov;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import ..
+
+/**constructeur
+ *
+ */
 
 public class MarkovChain {
 	
@@ -19,6 +20,10 @@ public class MarkovChain {
 		this.data = new MarkovData();
 	}
 
+    /** compliqué
+     *
+     * @param text
+     */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -96,6 +101,11 @@ public class MarkovChain {
 
          return buffer.trim();
     }
+
+    /** a tester
+     *
+     * @param rgen
+     */
 
 	public void setRgen(Random rgen) {
 		this.rgen = rgen;
