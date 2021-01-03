@@ -35,7 +35,7 @@ public class MarkovData {
 		return isNewKey;
 	}
 
-	/**recupère les mots en gras
+	/**recupère les mots en grassss
 	 *
 	 * @param keyString
 	 * @return
