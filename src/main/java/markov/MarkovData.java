@@ -22,7 +22,7 @@ public class MarkovData {
 	 * @param wordToLearn
 	 * @return
 	 */
-	public boolean mrenforceWord(String keyString, String wordToLearn) {
+	public boolean pprenforceWord(String keyString, String wordToLearn) {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
 		
