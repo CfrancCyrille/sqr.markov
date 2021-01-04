@@ -6,11 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**	
- * 
- *GUIFFO Kevin -> Commentaire classe MarkovData
- *
- */
+/** GUIFFO Kevin -> Commentaire classe MarkovData */
 
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
