@@ -7,6 +7,12 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * 
+ * Commmentaire 1
+ *
+ */
+
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
