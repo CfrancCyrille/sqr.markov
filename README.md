@@ -29,7 +29,7 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
+| main | I | Easy to test | 
 | readFileAsString |  |  | 
 
 ### Class markov.MarkovChain
